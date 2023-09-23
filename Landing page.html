@@ -1,0 +1,83 @@
+Landing page
+<html>
+<head>
+  <title>My Landing Page</title>
+  <link rel="stylesheet" type="text/css" href="task1.css">
+  <style>
+    /* Inline CSS for specific elements */
+    h1 {
+      color: #0073e6; 
+      font-size: 28px; 
+    }
+    
+    /* CSS for the "About Us" section */
+    #about {
+      background-color: #f2f2f2; 
+      padding: 20px; 
+    }
+    
+    /* CSS for the "Features" section */
+    #features {
+      background-color: #fff; 
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    }
+    
+    /* CSS for the footer */
+    footer {
+      background-color: #333; 
+      color: #fff; 
+      text-align: center; 
+      padding: 10px; 
+    }
+  </style>
+   <script>
+    function changeHeadingColor() {
+      var heading = document.querySelector('h1');
+      heading.style.color = '#e60000'; 
+    }
+
+    function restoreHeadingColor() {
+      var heading = document.querySelector('h1');
+      heading.style.color = "purple"; 
+    }
+  </script>
+</head>
+<body style="background-color: whitesmoke;">
+  <header>
+    <h1 onmouseover="changeHeadingColor()" onmouseout="restoreHeadingColor()">Welcome to CMR Shopping Mall</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="About">
+    <h2 style="color: darkorchid;">About us</h2>
+    <img src="C:\Users\DELL\Downloads\cmr_image.jpg"alt="CMR Shopping Mall">
+    <p>Established in the year 1971 the brand Chandana Brothers was founded by Mr. Chandana Mohan Rao; and Director Mr. Mavuri Venkata Ramana has introduced the Brand CMR Shopping Mall. They changed the Shopping pattern in Andhra Pradesh by starting CMR Shopping Mall.</p>
+</section>
+  </section>
+
+  <section id="features">
+    <h2 style="color: darkorchid;">Features</h2>
+    <ul>
+      <li>It is an enclosed shopping space.</li>
+      <li>It is large multi-storeyed air-conditioned building.</li>
+      <li>It has shops on different floors.</li>
+      <li>It also consists of restaurants and even a cinema theatre.</li>
+      <li>It sells both branded and non-branded goods.</li>
+    </ul>
+  </section>
+  <section id="contact">
+    <h2 style="color: darkorchid;">Contact</h2>
+    <p>If you'd like more information, you can visit our YouTube channel:</p>
+    <p><a href="https://youtube.com/@cmrshoppingmall.?si=H8siLZhasmOp4yCy" target="_blank">CMR Shopping Mall on YouTube</a></p>
+  </section>  
+  <footer>
+    <p>&copy; CMR Shopping Mall. All rights reserved.</p>
+  </footer>
+</body>
